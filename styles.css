@@ -1,8 +1,17 @@
-* {
+@import url("https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap");
+
+:root {
+  --almost-white: hsl(0, 0%, 98%);
+  --medium-gray: hsl(0, 0%, 41%);
+  --almost-black: hsl(0, 0%, 8%);
+}
+
+body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Arial", sans-serif;
+  font-family: "Epilogue", sans-serif;
+  font-size: 18px;
 }
 
 .nav-wrapper {
@@ -123,7 +132,7 @@
   top: 0;
   right: 0;
   height: 100vh;
-  width: 65%;
+  width: 40%;
   background: white;
   padding: 20px;
   transform: translateX(100%);
@@ -167,10 +176,9 @@
   display: none;
   position: fixed;
   top: 0;
-  left: 0;
-  width: 100%;
+  right: 0;
+  width: 0%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.5);
 }
 
 .overlay.active {
@@ -203,6 +211,9 @@
   margin-bottom: 40px;
   font-size: 18px;
   line-height: 1.5;
+}
+.mobile-hero {
+  display: none;
 }
 
 .cta-button {
@@ -294,7 +305,12 @@
   .hero-image img {
     content: url("images/image-hero-mobile.png");
   }
-
+  /* .desktop-hero {
+    display: none;
+  }
+  .mobile-hero {
+    display: block;
+  } */
   .client-logos {
     justify-content: center;
     flex-wrap: wrap;
